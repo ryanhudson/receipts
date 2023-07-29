@@ -19,7 +19,7 @@ module Receipts
       return if attributes.empty?
 
       company = attributes.fetch(:company)
-      header company: company, height: attributes.fetch(:logo_height)
+      header company: company, height: company.fetch(:logo_height)
       render_details attributes.fetch(:details)
       render_billing_details company: company, recipient: attributes.fetch(:recipient)
       render_line_items attributes.fetch(:line_items)
