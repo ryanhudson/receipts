@@ -19,7 +19,7 @@ module Receipts
       return if attributes.empty?
 
       company = attributes.fetch(:company)
-      header company: company, height: attributes.fetch(:logo_height, 16)
+      header company: company, height: attributes.fetch(:logo_height, 26)
       render_details attributes.fetch(:details)
       render_billing_details company: company, recipient: attributes.fetch(:recipient)
       render_line_items attributes.fetch(:line_items)
@@ -86,7 +86,7 @@ module Receipts
       table(line_items, width: bounds.width, :column_widths => [50, 180, 90, 90], cell_style: {border_color: "eeeeee", inline_format: true}) do
         cells.padding = 6
         cells.borders = []
-        row(0).background_color = "265A7B"
+        row(0).background_color = "2B6991"
         row(0).text_color = "ffffff"
         row(0..borders).borders = [:bottom]
       end
