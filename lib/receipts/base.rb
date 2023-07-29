@@ -83,7 +83,7 @@ module Receipts
       move_down margin_top
 
       borders = line_items.length - 2
-      table(line_items, width: bounds.width, :column_widths => [50, 200, 100, 50, 100], cell_style: {border_color: "eeeeee", inline_format: true}) do
+      table(line_items, width: bounds.width, :column_widths => [50, 180, 90, 50, 90], cell_style: {border_color: "eeeeee", inline_format: true}) do
         cells.padding = 6
         cells.borders = []
         row(0..borders).borders = [:bottom]
