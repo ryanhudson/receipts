@@ -1,5 +1,5 @@
 module Receipts
   class Invoice < Base
-    @title = "Invoices"
+    @title = "Invoice"
   end
 end
